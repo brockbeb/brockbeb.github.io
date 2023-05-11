@@ -1,0 +1,110 @@
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: Avenir;
+}
+
+body {
+  margin: 15px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 675px;
+}
+
+.header {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.me {
+  width: 150px;
+  border-radius: 100%;
+}
+
+.nav {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
+
+.about {
+  margin-top: 40px;
+}
+
+.outro {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Blog Specific Styling */
+
+/* Project Sepcific Styling */
+
+.tags {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#python,
+#flask,
+#htmlcss {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-radius: 25px;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-left: 10px;
+  font-size: 0.8em;
+  opacity: 40%;
+  height: 22px;
+  color: white;
+}
+
+#python {
+  background-color: blue;
+  margin-left: 0px;
+}
+#flask {
+  background-color: red;
+}
+#htmlcss {
+  background-color: green;
+}
+
+.project-name {
+  margin-bottom: 10px;
+}
+
+.project-all-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image {
+  width: 350px;
+}
+
+@media (min-width: 600px) {
+  .project-all-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-image {
+    width: 225px;
+  }
+}
