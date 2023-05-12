@@ -15,6 +15,7 @@ body {
   max-width: 675px;
 }
 
+/* Link Styling */
 a,
 a:visited {
   text-decoration: none;
@@ -25,6 +26,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Header Styling */
 .header {
   padding-top: 20px;
   display: flex;
@@ -34,19 +36,24 @@ a:hover {
 }
 
 .me {
-  width: 150px;
+  width: 80%;
+  max-width: 150px;
   border-radius: 100%;
 }
 
 .nav {
   display: flex;
-
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 270px;
+  width: 80%;
+  max-width: 270px;
 }
 
-.about {
+/* Main body of all pages */
+.about,
+.projects,
+.blog {
   margin-top: 40px;
 }
 
@@ -57,39 +64,59 @@ a:hover {
 
 /* Blog Specific Styling */
 
-/* Project Sepcific Styling */
+/* Project Sepecific Styling */
 
 .tags {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 #python,
 #flask,
-#htmlcss {
+#html,
+#css,
+#js,
+#react,
+#django,
+#sql {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: blue;
   border-radius: 25px;
   padding-left: 7px;
   padding-right: 7px;
-  margin-left: 10px;
+  margin-top: 3px;
+  margin-right: 6px;
   font-size: 0.8em;
-  opacity: 40%;
+  opacity: 70%;
   height: 22px;
   color: white;
 }
 
 #python {
   background-color: blue;
-  margin-left: 0px;
+}
+#html {
+  background-color: darkorange;
+}
+#css {
+  background-color: deepskyblue;
+}
+#js {
+  background-color: gold;
 }
 #flask {
   background-color: red;
 }
-#htmlcss {
-  background-color: green;
+#react {
+  background-color: turquoise;
+}
+#django {
+  background-color: limegreen;
+}
+#sql {
+  background-color: blueviolet;
 }
 
 .project-name {
